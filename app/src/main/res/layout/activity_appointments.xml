@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5199D3"
+    tools:context=".Appointments">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Appointments"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_margin="5dp"
+        android:stretchColumns="*">
+
+        <!-- Table Header -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/cell_border"
+                android:textAlignment="center"
+                android:text="Patient Number"
+                android:paddingTop="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:background="@drawable/cell_border"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="Payment Status"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:textAlignment="center"
+                android:background="@drawable/cell_border"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="Reply"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                android:background="@drawable/cell_border"/>
+        </TableRow>
+
+        <!-- Sample Row (Replace with dynamic data) -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4067"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sk Redwan"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paid"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="reply"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:autoLink="web"/>
+        </TableRow>
+
+        <!-- Add more rows dynamically with data from your source -->
+
+    </TableLayout>
+
+</LinearLayout>
